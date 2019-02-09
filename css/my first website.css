@@ -113,7 +113,7 @@ a {
 .title {
         text-align: left;
         position: absolute;
-        top: 50%;
+        top: 40%;
         left: 310px;
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
@@ -165,6 +165,7 @@ h1{
     z-index: 1.5;
 }
 
+/* Remove bottle from small screens */
 @media screen and (max-width: 996px){
     #middle{
     display: none;
@@ -174,7 +175,7 @@ h1{
 /* Our Story */
 .story{
     width: 100%;
-    display: flex;
+    /*display: flex;*/
     position: relative;
     z-index: -1;
 }
@@ -183,6 +184,7 @@ h1{
     background-color: #05934e;
     flex: 1;
     position: relative;
+    height: 566px;
 }
 
 .glass{
@@ -207,6 +209,13 @@ h1{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* Our Story Responsive */
+@media screen and (min-width: 996px){
+    .story{ display: flex;
+    }
+}
+
 
 /* flavors */
 .flavors{
