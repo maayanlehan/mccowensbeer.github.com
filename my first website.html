@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> McCowen's Beer</title>
+    <link rel="stylesheet" href="css/my first website.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Mr De Haviland' rel='stylesheet'>
+</head>
+<body>
+<!--header-->
+    <div class="header">
+            <div class="nav">
+                <div class="logo">
+                    <img src="assets/mc_logo.svg" alt="logo" id="logo" href="#">
+                </div>
+                
+                <nav>
+                    <a class="burger"></a>
+
+                    <ul class="links">
+                    <li> <a href="#story">Our Story</a> </li>
+                    <li> <a href="#flavors">The Flavors</a> </li>
+                    <li> <a href="#contact">Greet The Host</a> </li>
+                    </ul>
+                </nav>
+            </div>
+    </div>
+
+<!--page content-->
+<div class="content">
+
+    <!--banner-->
+        <div class="banner">
+            <img src="assets/Pint Bottle copy.png" alt="McCowen’s Beer" id="middle" width="30%">
+            <div class="title">
+                <h1>MEET <br> McCowen’s</h1>
+                <h2 class="home">home brewed <span class="irish"> Irish Beer</span> </h2>
+                <p>The best beer in the world, homemade by the most awesome irish guy you will ever meet.</p>
+                <a href="#" class="explore">explore ></a>
+            </div>
+        </div>
+
+    <!--our story-->
+        <div class="story" id="story">
+            <div class="glass">
+                <!--<img src="assets/beer-glass-mockup.png" alt="glass" id="glass" width="100%">-->
+            </div>
+
+            <div class="green_con">
+                <div class="text">
+                    <h3>our story</h3>
+                    <p>
+                            In the middle of the eighteenth century Arthur Guinness opened a brewery in Dublin adjacent to the Liffey River. After some years of experimentation with English porter recipes and local Irish ingredients, he created the Guinness stout so popular and well known today.
+                            <br> <br>
+                            Dating back to the early nineteenth century there were more than 200 breweries in Ireland. Slowly these numbers dwindled, leaving just a handful of large companies still operating by the middle of the twentieth century.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    <!--the flavors-->
+        <div class="flavors" id="flavors">
+            <h3>the flavors</h3>
+            <div class="bottles">
+                <div class="yellow">
+                    <img src="assets/Pint Bottle 01.png" alt="Bright Lager" id="yellow" width="100%">
+                    <p>Bright <br> Lager</p>
+                </div>
+                <div class="green">
+                    <img src="assets/Pint Bottle 02.png" alt="Blond Ale" id="green" width="100%">
+                    <p>Blond <br> Ale</p>
+                </div>
+                <div class="red">
+                    <img src="assets/Pint Bottle 03.png" alt="Red Ale" id="red" width="100%">
+                    <p>Red <br> Ale</p>
+                </div>
+                <div class="black">
+                    <img src="assets/Pint Bottle 04.png" alt="Dry Stout" id="black" width="100%">
+                    <p>Dry <br> Stout</p>
+                </div>
+            </div>
+        </div>
+
+    <!--contact form-->
+        <div class="greetings" id="contact">
+            
+            <div class="contact">
+                <h3>greet the host</h3>
+                <br>
+                <p>     We would love to hear from you.
+                    <br>
+                        <strong> Write to us or Come visit </strong>
+                    <br>
+                        Sandymount strand road, 100
+                    <br>
+                        Dublin 4, Ireland</p>
+            </div>
+
+            <div class="form_con">
+                <form action="/action_page.php">
+                    
+                    <div class="row">
+                        <div class="first">
+                        <label for="name">First Name
+                        <input type="text" id="name" name="firstname" placeholder="Your Name">
+                        </label>
+                        </div>
+
+                        <div class="last">
+                        <label for="last">Last Name
+                        <input type="text" id="last" name="lastname" placeholder="Your Last Name">
+                        </label>
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="phone">
+                        <label for="phone">Phone Number
+                        <input type="tel" id="phone" name="phonenumber" placeholder="000-0000000">
+                        </label>
+                        </div>
+
+                        <div class="email">
+                        <label for="email">E-Mail
+                        <input type="email" id="mail" name="e-mail" placeholder="E-Mail">
+                        </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="message">
+                        <label for="message">Your greetings to the host
+                        <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+                        </label>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <div class="btn">
+                        <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    <!--footer-->
+        <div class="footer">
+            <div class="nav">
+                <div class="logo">
+                    <img src="assets/mc_logo.svg" alt="logo" id="flogo">
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="#"><strong>Facebook</strong></a></li>
+                        <li><a href="#"><strong>Instagram</strong></a></li>
+                        <li><a href="#">Term of use</a></li>
+                        <li>© McCowen family around the globe</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</div>
+
+</body>
+</html>

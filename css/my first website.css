@@ -1,0 +1,319 @@
+body{
+    margin: 0 auto;
+    padding: 0px;
+    height: auto;
+    font-family: 'Roboto';    
+    font-size:16px;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+h3{
+    text-transform:uppercase;
+    font-family: 'Roboto';
+    font-size: 3rem;
+    font-style: bold;
+    /*line-height: 90%;*/
+    margin: 0 auto;
+    padding: 0px;
+    height: auto;
+}
+
+/* Headr */
+.header {
+    background-color:white;
+    z-index: 2;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.03);
+    padding: 15px 135px;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    justify-content:space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    align-content: center;
+}
+
+li {
+    display: inline;
+}
+
+.links {
+    color: black;
+    text-decoration: none;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    margin: 20px;
+}
+
+.header a:hover {
+    color: #dacf61;
+    font-style: italic;
+}
+
+.burger {
+    display: none;
+}
+
+/* Headr Responsive */
+@media screen and (max-width: 934px) {
+    .burger {
+        display: block;
+        height: 10px;
+        width: 100%;
+        background: url(../assets/burger.png) no-repeat 98% center;
+    }
+
+    .links {
+        display: none;
+    }
+    
+}
+
+/* footer */
+.footer {
+    align-items: center;
+    justify-content: center;
+    padding: 15px 135px;
+    overflow: hidden;
+}
+
+
+
+/* Banner */
+.banner{
+    background-image: url(../assets/banner.png);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 300px;
+    padding: 7% 10%;
+    background-attachment: fixed;
+}
+
+
+.title {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 310px;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 356px;
+}
+
+h1{
+    font-family: 'Roboto';
+    font-size: 3.5rem;
+    line-height: 90%;
+}
+
+.home{
+    font-family: 'Roboto';
+    font-size: 1.5rem;
+    /*line-height: 130%;*/
+    text-transform: uppercase;
+    color: #dacf61;
+}
+
+.irish{
+    font-family: 'Mr De Haviland';
+    font-size: 2rem;
+    /*line-height: 130%;*/
+    text-transform: capitalize;
+    color: #d1d3d4;
+    margin: 3%;
+    font-style: normal;
+}
+
+.explore{
+    background-color: white;
+    text-decoration: none;
+    position: absolute;
+    padding: 0;
+    margin: 5% 0;
+    font-family: 'Abel';
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-style: bold;
+
+}
+
+#middle{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1.5;
+}
+
+@media screen and (max-width: 996px){
+    #middle{
+    display: none;
+    }
+}
+
+/* Our Story */
+.story{
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: -1;
+}
+
+.green_con{
+    background-color: #05934e;
+    flex: 1;
+    position: relative;
+}
+
+.glass{
+    flex: 1;
+    height: 566px;
+    background-image: url(../assets/beer-glass-mockup.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.story p{
+    color: #ffffff;
+}
+
+.story h3{
+    color: #006838;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* flavors */
+.flavors{
+    width: 100%;
+}
+
+.flavors h3{
+    padding: 1%;
+    margin: 5% 2%;
+    display: block;
+    color: #dcdcdc;
+    text-align: center;
+}
+
+.bottles{
+    display: flex;
+    padding: 1% 7% 4%;
+    margin-top: 2%;
+    position: relative;
+    left: 5%;
+}
+
+.flavors p{
+    float: right;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+    
+.flavors div{
+    clear: both;
+    flex: 1;
+    position: relative;
+}
+
+/* contact */
+.greetings{
+    display: flex;
+    background-image: url(../assets/contact_img.png);
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 7% 10%;
+}
+
+.contact{
+    flex: 1;
+    color: #ffffff;
+    margin-right: 10%;
+}
+
+.form_con{
+    color: #ffffff;
+    font-size: 0.75rem;
+    flex: 2;
+    width: 100%;
+}
+
+form{
+    padding: 0 5%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+form div{
+    display: inline-block;
+}
+.row{
+    display: block;
+}
+
+.first, .last, .phone, .email, .message, .btn {
+    padding: 0 15px;
+    margin-bottom: 15px;
+} 
+
+label{
+    display: block;
+}
+
+input, textarea{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid white;
+    color: rgb(138, 138, 138);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    overflow: hidden;
+}
+
+input[type=submit]{
+    background-color: #109648;
+    border: none;
+    color: #ffffff;
+    font-family: 'Mr De Haviland';
+    font-size: 1.5rem;
+    padding: 7px 35px 2px;
+    margin: 0;
+}
+
+input[type=submit]:hover {
+    background-color: #0b813c;
+    transition-duration: 0.4s;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
