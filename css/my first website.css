@@ -1,3 +1,7 @@
+*, *:after, :before{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0 auto;
     padding: 0px;
@@ -8,12 +12,17 @@ body{
     overflow-x: hidden;
 }
 
+@media screen and (max-width: 501px){
+    body{ font-size: 18px;
+    }
+}
+
+
 h3{
     text-transform:uppercase;
     font-family: 'Roboto';
     font-size: 3rem;
     font-style: bold;
-    /*line-height: 90%;*/
     margin: 0 auto;
     padding: 0px;
     height: auto;
@@ -21,7 +30,7 @@ h3{
 
 /* Headr */
 .header {
-    background-color:white;
+    background-color:rgba(255, 255, 255, 0.938);
     z-index: 2;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.03);
     padding: 15px 135px;
@@ -71,13 +80,18 @@ a {
     display: none;
 }
 
-/* Headr Responsive */
+/* Header Responsive */
 @media screen and (max-width: 934px) {
+    .header{
+        padding: 0 20px;
+    }
+
     .burger {
         display: block;
-        height: 10px;
+        height: 50px;
         width: 100%;
-        background: url(../assets/burger.png) no-repeat 98% center;
+        background: url(../assets/burger.png) no-repeat;
+        cursor:pointer;
     }
 
     .links {
@@ -104,20 +118,33 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 300px;
-    padding: 7% 10%;
+    height: 566px;
     background-attachment: fixed;
 }
 
+/* title mobile position */
+@media screen and (max-width: 501px){
+    .title {
+            position: absolute;
+            top: 40%;
+            left: 180px;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            width: 90%;
+    }
+}
 
-.title {
-        text-align: left;
-        position: absolute;
-        top: 40%;
-        left: 310px;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        width: 356px;
+/* title desktop position */
+@media screen and (min-width: 500px){
+    .title {
+            position: absolute;
+            top: 40%;
+            left: 310px;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 356px;
+    }
 }
 
 h1{
@@ -129,7 +156,6 @@ h1{
 .home{
     font-family: 'Roboto';
     font-size: 1.5rem;
-    /*line-height: 130%;*/
     text-transform: uppercase;
     color: #dacf61;
 }
@@ -137,7 +163,6 @@ h1{
 .irish{
     font-family: 'Mr De Haviland';
     font-size: 2rem;
-    /*line-height: 130%;*/
     text-transform: capitalize;
     color: #d1d3d4;
     margin: 3%;
@@ -162,7 +187,7 @@ h1{
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1.5;
+    z-index: 1;
 }
 
 /* Remove bottle from small screens */
@@ -175,9 +200,7 @@ h1{
 /* Our Story */
 .story{
     width: 100%;
-    /*display: flex;*/
     position: relative;
-    z-index: -1;
 }
 
 .green_con{
@@ -193,6 +216,17 @@ h1{
     background-image: url(../assets/beer-glass-mockup.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: bottom;
+}
+
+/* our story mobile */
+@media screen and (max-width: 501px){
+    .glass{
+        height: 300px;
+    }
+    .text{
+        width: 85%;
+    }
 }
 
 .story p{
@@ -252,10 +286,15 @@ h1{
     position: relative;
 }
 
+/* flavors mobile */
+@media screen and (max-width: 501px){
+    
+}
+
 /* contact */
 .greetings{
-    display: flex;
-    background-image: url(../assets/contact_img.png);
+    /*display: flex;*/
+    background-image: url(../assets/contact\ img-big.jpg);
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
@@ -271,44 +310,25 @@ h1{
     margin-right: 10%;
 }
 
-.form_con{
+form{
     color: #ffffff;
     font-size: 0.75rem;
     flex: 2;
-    width: 100%;
 }
 
-form{
-    padding: 0 5%;
-    height: 50%;
-    display: flex;
-    flex-direction: column;
-}
-form div{
-    display: inline-block;
-}
-.row{
-    display: block;
-}
-
-.first, .last, .phone, .email, .message, .btn {
-    padding: 0 15px;
-    margin-bottom: 15px;
-} 
-
-label{
-    display: block;
+.field{
+    flex: 1;
+    margin: 10px;
 }
 
 input, textarea{
     padding: 10px;
-    margin: 10px 0;
     border: 1px solid white;
     color: rgb(138, 138, 138);
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0);
-    width: 100%;
     overflow: hidden;
+    width: 100%;
 }
 
 input[type=submit]{
@@ -317,12 +337,37 @@ input[type=submit]{
     color: #ffffff;
     font-family: 'Mr De Haviland';
     font-size: 1.5rem;
-    padding: 7px 35px 2px;
-    margin: 0;
+    margin: 10px;
+    width: 25%;
+    float: right;
 }
 
 input[type=submit]:hover {
     background-color: #0b813c;
     transition-duration: 0.4s;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+    cursor:pointer;
+}
+
+/* Contact Responsive */
+@media screen and (min-width: 996px){
+    .greetings{ display: flex;
+    }
+
+    .row{ display: flex;
+    }
+}
+
+@media screen and (max-width: 996px){
+    .contact{
+        margin: 10% 0;
+    }
+
+    .field{
+        margin: 5% 0;
+    }
+
+    input[type=submit]{
+        margin: 0;
+    }
 }

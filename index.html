@@ -2,6 +2,7 @@
 <html>
 <head>
     <title> McCowen's Beer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/my first website.css"/>
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -16,7 +17,9 @@
                 </div>
                 
                 <nav>
-                    <a class="burger"></a>
+                    <a class="burger">
+                        <!--<img src="../my first website/assets/burger.png" alt="menu">-->
+                    </a>
 
                     <ul class="links">
                     <li> <a href="#story">Our Story</a> </li>
@@ -32,7 +35,7 @@
 
     <!--banner-->
         <div class="banner">
-            <img src="assets/Pint Bottle copy.png" alt="McCowen’s Beer" id="middle" width="30%">
+            <img src="assets/Pint Bottle.png" alt="McCowen’s Beer" id="middle" width="45%">
             <div class="title">
                 <h1>MEET <br> McCowen’s</h1>
                 <h2 class="home">home brewed <span class="irish"> Irish Beer</span> </h2>
@@ -44,7 +47,6 @@
     <!--our story-->
         <div class="story" id="story">
             <div class="glass">
-                <!--<img src="assets/beer-glass-mockup.png" alt="glass" id="glass" width="100%">-->
             </div>
             <div class="green_con">
                 <div class="text">
@@ -84,72 +86,64 @@
     <!--contact form-->
         <div class="greetings" id="contact">
             
-            <div class="contact">
-                <h3>greet the host</h3>
-                <br>
-                <p>     We would love to hear from you.
+                <div class="contact">
+                    <h3>greet the host</h3>
                     <br>
-                        <strong> Write to us or Come visit </strong>
-                    <br>
-                        Sandymount strand road, 100
-                    <br>
-                        Dublin 4, Ireland</p>
-            </div>
+                    <p>     We would love to hear from you.
+                        <br>
+                            <strong> Write to us or Come visit </strong>
+                        <br>
+                            Sandymount strand road, 100
+                        <br>
+                            Dublin 4, Ireland</p>
+                </div>
 
-            <div class="form_con">
                 <form action="/action_page.php">
-                    
-                    <div class="row">
-                        <div class="first">
+                    <div class="row">    
+                        <div class="field">
                         <label for="name">First Name
                         <input type="text" id="name" name="firstname" placeholder="Your Name">
                         </label>
                         </div>
 
-                        <div class="last">
+                        <div class="field">
                         <label for="last">Last Name
                         <input type="text" id="last" name="lastname" placeholder="Your Last Name">
                         </label>
                         </div>
                     </div>
-                
-                    <div class="row">
-                        <div class="phone">
+                    
+                    <div class="row">  
+                        <div class="field">
                         <label for="phone">Phone Number
                         <input type="tel" id="phone" name="phonenumber" placeholder="000-0000000">
                         </label>
                         </div>
 
-                        <div class="email">
+                        <div class="field">
                         <label for="email">E-Mail
                         <input type="email" id="mail" name="e-mail" placeholder="E-Mail">
                         </label>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div class="message">
+                    <div class="row">  
+                        <div class="field">
                         <label for="message">Your greetings to the host
-                        <textarea rows="4" cols="50" name="comment" form="usrform">Enter text here...</textarea>
+                        <textarea rows="4" cols="50" name="comment" form="usrform">Enter Text Here...</textarea>
                         </label>
                         </div>
                     </div>
 
-                    <br>
-                    <div class="row">
-                        <div class="btn">
                         <input type="submit" value="Send">
-                        </div>
-                    </div>
                 </form>
-            </div>
         </div>
 
     <!--footer-->
         <div class="footer">
             <div class="nav">
                 <div class="logo">
-                    <img src="assets/mc_logo.svg" alt="logo" id="flogo">
+                    <img src="assets/mc_logo.svg" alt="logo" id="flogo" width="80%">
                 </div>
                 <div class="links">
                     <ul>
